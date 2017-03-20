@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+<div *ngIf="selectedEvent">
+    Selected {{selectedEvent.name}}
+</div>
+<ul class="events">
+    <li *ngFor="let hostEvent of hostEvents" 
+        [class.selected]="hostEvent === selectedEvent"
+        (click)="onSelect(hostEvent)">
+        <span class="badge">{{hostEvent.id}}</span> {{hostEvent.name}}
+    </li>
+</ul>
+<event-detail [hostEvent]="selectedEvent"></event-detail>

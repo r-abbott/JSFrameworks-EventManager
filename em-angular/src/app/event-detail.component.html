@@ -1,0 +1,9 @@
+<div *ngIf="hostEvent">
+    <h2>{{hostEvent.name}} details</h2>
+    <div><label>id: </label>{{hostEvent.id}}</div>
+    <div>
+        <label>Name: </label>
+        <input [(ngModel)]="hostEvent.name" placeholder="name"/>
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>
