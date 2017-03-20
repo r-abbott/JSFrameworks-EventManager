@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3B76B319-7876-4C9A-A8AD-61B21D35734F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02F27646-7D32-43F5-A2B0-C0234B368C36}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "EM-API", "src\EM-API\EM-API.xproj", "{B85A8887-59A3-43FE-96AB-61AEB48DF86A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B85A8887-59A3-43FE-96AB-61AEB48DF86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B85A8887-59A3-43FE-96AB-61AEB48DF86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B85A8887-59A3-43FE-96AB-61AEB48DF86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B85A8887-59A3-43FE-96AB-61AEB48DF86A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B85A8887-59A3-43FE-96AB-61AEB48DF86A} = {3B76B319-7876-4C9A-A8AD-61B21D35734F}
+	EndGlobalSection
+EndGlobal
