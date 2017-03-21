@@ -51,7 +51,7 @@ namespace EM_API.Controllers
             }
 
             var id = _eventRepo.GetNextId();
-            var eve = new Event(id, newEvent.Name, newEvent.Description, newEvent.Price, newEvent.Date, newEvent.AdditionalInformation);
+            var eve = new Event(id, newEvent.Name, newEvent.Description, newEvent.Price, newEvent.DateTime, newEvent.AdditionalInformation);
             try
             {
                 _eventRepo.Add(eve);
@@ -80,7 +80,7 @@ namespace EM_API.Controllers
                 {
                     return NotFound();
                 }
-                var eve = new Event(id, updatedEvent.Name, updatedEvent.Description, updatedEvent.Price, updatedEvent.Date, updatedEvent.AdditionalInformation);
+                var eve = new Event(id, updatedEvent.Name, updatedEvent.Description, updatedEvent.Price, updatedEvent.DateTime, updatedEvent.AdditionalInformation);
                 _eventRepo.Update(eve);
                 return Ok(eve);
             }

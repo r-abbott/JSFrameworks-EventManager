@@ -10,7 +10,7 @@ namespace EM_API.ViewModels
         public string Description { get; }
         public string Date { get; }
         public string Time { get; }
-        public string Price { get; }
+        public decimal Price { get; }
         public IEnumerable<string> AdditionalInformation { get; }
 
         public EventDetailsViewModel(int id, string name, string description, DateTime date, decimal price, IEnumerable<string> additionalInformation)
@@ -18,7 +18,7 @@ namespace EM_API.ViewModels
             Id = id;
             Name = name;
             Description = description;
-            Price = price > 0.0m ? $"${price}" : "Free";
+            Price = price;
             Date = date.Date();
             Time = date.Time();
             AdditionalInformation = additionalInformation;
