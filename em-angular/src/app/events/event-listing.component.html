@@ -1,0 +1,9 @@
+<h1>{{title}}</h1>
+<button (click)="addEvent()">New Event</button>
+<ul class="events">
+    <li *ngFor="let hostEvent of hostEvents" 
+        [class.selected]="hostEvent === selectedEvent"
+        (click)="onSelect(hostEvent)">
+        <span class="badge">{{hostEvent.date}}</span> {{hostEvent.name}} <span class="price">{{ hostEvent.price | priceFilter }}</span>
+    </li>
+</ul>

@@ -5,4 +5,9 @@ export class HostEvent{
     price: string;
     date: string;
     time: string;
+    additionalInformation: string[];
+
+    constructor(){
+        this.additionalInformation = [];
+    }
 }
